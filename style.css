@@ -1,5 +1,308 @@
-:root{
-    --fuenteheading:'PT Sans', sans-serif;
-    --fuenteparrafo:'PT Sans', sans-serif;
+/*
 
+
+
+body{
+    font-family: var(--fuenteparrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: rgb(82, 81, 99);
 }
+*/
+/* Estilos generales */
+
+:root {
+    --fuenteheading: 'PT Sans', sans-serif;
+    --fuenteparrafo: 'PT Sans', sans-serif;
+    --color-primario: #ff3300;
+    --color-fondo: #333;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  *,*::before,*::after {
+    box-sizing: inherit;
+  }
+
+
+  body {
+    font-family: var(--fuenteparrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--color-fondo);
+  }
+  
+  .contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+  h1,h2,h3,h4{
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+  }
+
+  h1{
+    font-size: 4.8rem;
+  }
+
+  h2{
+    font-size: 1.8rem;
+  }
+
+  h3{
+    font-size: 3.2rem;
+  }
+
+
+  .no-margin{
+    margin: 0;
+  }
+  .no-padding{
+    padding: 0;
+  }
+ .centrar-texto{
+    text-align: center;
+ }
+  
+  /* Estilos del header */
+  
+  
+  .barra--enlaces{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .barra {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+  }
+
+  @media (min-width: 360px){
+    .barra--enlaces{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .barra__enlace{
+        width: 100%;
+        text-align: center;
+    }
+    .titulo{
+        margin-top: 10rem;
+    }
+  }
+
+  @media (min-width: 768px){
+    .barra--enlaces{
+        flex-direction: row;
+    }
+    .titulo{
+        margin-top: 10rem;
+    }
+}
+
+.barra__enlace{
+    color:#fff;
+    padding: 1rem;
+    font-family: var(--fuenteheading);
+    font-weight: bold;
+}
+
+  .barra__enlace:hover{
+    background-color:#ff3300;
+  }
+
+  .background--imag{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+
+  .header{
+    background-image: url("Images\Gym2.jpeg");
+    margin: 0;
+    background-size: cover;
+    height: 45rem;
+    background-position: center center;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .titulo {
+    padding-top: 3rem;
+    color:#fff;
+    text-align: center;
+    font-weight: 900;
+    padding: 1rem 10rem;
+    border-radius: 3rem;
+  }
+
+  .titulo-span{
+    color: #ff3300;
+  }
+
+  .titulo-span{
+    font-weight: 900;
+  }
+
+  .logo-h2{
+    text-align: center;
+    color: #fff;
+    margin-top: 5rem;
+    font-size: 2.8rem;
+    font-family: var(--fuenteheading);
+    font-weight: 900;
+    background-color: rgba(100,100,100,.3);
+    padding: 1rem 3rem;
+  }
+
+  @media(min-width: 360px){
+    .borde{
+        text-align: center;
+    }
+    .logo-h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+        }
+    }
+
+    @media (min-width: 768px){
+        .titulo{
+            font-size: 6.6rem;
+        }
+    }
+
+    @media (min-width: 1280px){
+        .logo-h2{
+            margin-top: 5rem;
+        }
+    }
+  
+  
+  /* Estilos del contenido principal */
+  
+  .contenido--principal{
+    background-color: rgb(20,20,20);
+    color:#fff;
+    border-radius: 2rem;
+    padding-top: .5rem;
+  }
+
+  .subtitulo {
+    color:#FFD700;
+    font-family: var(--fuenteheading);
+    font-size: 4rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .borde{
+    display: flex;
+    justify-content: center;
+  }
+
+  .shadow{
+    -webkit-box-shadow: -1px 4px 9px 1px #fff;
+    -moz-box-shadow: -1px 4px 9px 1px #fff;
+    box-shadow: -1px 4px 9px 1px #fff;
+  }
+  
+  .subtitulo-planes {
+    color: #FFD700;
+    font-family: var(--fuenteheading);
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contenido__plan{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding-bottom: 5rem;
+    column-gap: 3rem;
+  }
+
+  @media(min-width: 360px){
+    .contenidos__plan{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 768px){
+    .contenidos__plan{
+        display: flex;
+        padding-top: 0;
+    }
+  }
+  
+  @media (min-width: 1200px){
+    .contenidos__plan{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+
+  .plan{
+    background-color:#C0C0C0;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    color: #fff;
+    margin: 2rem;
+  }
+
+  .subtitulo-precios {
+    color: #ff3300;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos del footer */
+  
+  .footer {
+    background-color: rgba(0,0,0,7);
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  .navegacion--footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .barra__enlace--footer {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .titulo-footer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-span {
+    color: #ff3300;
+  }
+  
+  /* Otros estilos adicionales según necesidades */
+  
