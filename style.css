@@ -129,7 +129,7 @@ body{
   }
 
   .header{
-    background-image: url("Images\Gym2.jpeg");
+    background-image: url("Images/Gym2.jpeg");
     margin: 0;
     background-size: cover;
     height: 45rem;
@@ -139,6 +139,7 @@ body{
   
   
   .titulo {
+    white-space: nowrap;
     padding-top: 3rem;
     color:#fff;
     text-align: center;
@@ -152,6 +153,7 @@ body{
   }
 
   .titulo-span{
+    
     font-weight: 900;
   }
 
@@ -225,12 +227,16 @@ body{
     text-align: center;
   }
 
-  .contenido__plan{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+  .contenidos__plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
     text-align: center;
     padding-bottom: 5rem;
-    column-gap: 3rem;
+    /*column-gap: 3rem;*/
   }
 
   @media(min-width: 360px){
@@ -257,15 +263,25 @@ body{
   }
 
   .plan{
-    background-color:#C0C0C0;
+    width: calc(33.33% - 1rem);
+    margin-bottom: 2rem;
+    background-color:#FF0000;
     border-radius: 2rem;
-    padding: 2rem 3rem;
+    padding: 2rem;
     color: #fff;
-    margin: 2rem;
+    text-align: center;
+    margin: .5rem;
   }
 
+  @media (max-width: 768px) {
+    .plan {
+      width: calc(50% - 1rem); /* Ancho del 50% del contenedor menos el margen en dispositivos móviles */
+    }
+  }
+
+
   .subtitulo-precios {
-    color: #ff3300;
+    color: #FFD700;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
