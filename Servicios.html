@@ -1,0 +1,100 @@
+import {Swiper, SwiperSlide} from "swiper/react";
+import {EffectCoverflow} from "swiper";
+import "swiper/css";
+import "swiper/css/effect-EffectCoverflow";
+import "/styleSer.css";
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON FIT</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="styleSer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="background--imag">
+    <div class="barra">
+        <nav class="barra--enlaces contenedor">
+            <a href="index.html" class="barra__enlace">Inicio</a>
+            <a href="Ingresar.html" class="barra__enlace">Ingresar</a>
+            <a href="Entrenadores.html" class="barra__enlace">Instructores</a>
+            <a href="Productos.html" class="barra__enlace">Productos</a>
+        </nav>
+
+        <div class="borde">
+        <div class="fondologo">
+
+            <a href="Conocenos.html">
+        <h1 class="titulo contenedor"><span class="titulo-span">IRON</span> FIT</h1>
+                </a>
+        </div>
+    </div>
+
+
+<div class="borde">
+        <div class="fondologo">
+        <h2 class="logo-h2">NO ERES LO QUE LOGRAS, ERES LO QUE SUPERAS</h2>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    </header>
+    <!--Info Principal-->
+
+
+
+    <main class="contenido">
+        const slides = ["Images/crossfit.jpg","Images/trx.jpg","Images/masajes.jpg"];
+
+        export const Carrusel = () =>
+            <Swiper
+            centeredSlides
+            slidesPerView = "auto"
+            effect = "coverflow"
+            loop
+            coverflowEffect = {{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slidesShadows: true,
+            }}
+            modules={[EffectCoverflow]}
+            >
+                <div className="swiper-wrapper">
+                    {slides.map((slide) => (
+                        <SwiperSlide
+                        style={{
+                            backgroundImage: 'url(${slide})',
+                        }}
+                        />
+                    ))}
+                </div>
+            </Swiper>
+
+
+    </main>
+  
+
+<!--Pie pag-->>
+
+<footer class="footer">
+    <div class="barra-footer contenedor">
+        <nav class="navegacion--footer contenedor">
+            <a href="Ingresar.html" class="barra__enlace--footer">Ingresar</a>
+            <a href="Entrenadores.html" class="barra__enlace--footer">Entrenadores</a>
+            <a href="Productos.html" class="barra__enlace--footer">Productos</a>
+            <a href="Servicios.html" class="barra__enlace--footer">Servicios</a>
+        </nav>
+
+        <h3 class="titulo-footer"><span class="footer-span">IRON</span>FIT</h3>
+
+    </div>
+    </footer>
+</body>
+</html>
