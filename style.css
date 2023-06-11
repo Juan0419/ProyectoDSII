@@ -119,8 +119,15 @@ body{
 }
 
   .barra__enlace:hover{
-    background-color:#ff3300;
+    background-color:rgb(163,13,18);
     border-radius: .5rem;
+    box-shadow: -1px 3px 5px 1px #fff;
+  }
+
+  .shadow{
+    -webkit-box-shadow: -1px 4px 9px 1px #fff;
+    -moz-box-shadow: -1px 4px 9px 1px #fff;
+    box-shadow: -1px 4px 9px 1px #fff;
   }
 
   .background--imag{
@@ -197,7 +204,7 @@ body{
   /* Estilos del contenido principal */
   
   .contenido--principal{
-    background-color: rgb(254,0,26);
+    background-color: rgb(163,13,18);
     color:#fff;
     border-radius: 2rem;
     padding-top: .5rem;
@@ -205,12 +212,13 @@ body{
 
   .subtitulo {
     color:#ffffff;
+    -webkit-text-stroke: 2.5px black;
     font-family: var(--fuenteheading);
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 1rem 5rem;
     border-radius: 0.5rem;
     text-align: center;
-    background-color: rgb(254, 0, 26);
+    background-color: rgb(163,13,18);
   }
 
   .borde{

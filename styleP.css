@@ -105,18 +105,21 @@
     font-weight: bold;
 }
 
-  .barra__enlace:hover{
-    background-color:#ff3300;
-  }
+.barra__enlace:hover{
+  background-color:rgb(163,13,18);
+  border-radius: .5rem;
+  box-shadow: -1px 3px 5px 1px #fff;
+}
 
   .background--imag{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
+    border-radius: .5rem;
   }
 
   .header{
-    background-image: url("Images/gymSer.jpg");
+    background-image: url("Images/Productos.jpg");
     margin: 0;
     background-size: cover;
     height: 45rem;
