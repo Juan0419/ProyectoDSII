@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRON FIT</title>
-    <link rel="stylesheet" href="styleIng.css">
+    <link rel="stylesheet" href="styleLog.css">
     <link rel="icon" type="image/png" href="Images/IP.jpg">
 </head>
 <body>
@@ -50,47 +50,18 @@
     <main class="contenido">
     <div class="contenido--principal contenedor shadow">
         <div class="borde text-center">
-            <h2 class="subtitulo">Ingreso de Usuario</h2>
+            <h2 class="subtitulo">Datos Instructor</h2>
         </div>
-            <div class="container">
-                <div class="text-center caja-login" style="background-color: black;">
+            <div class="container text-center mt-4">
                 
-                  <div class="formulario-login">
+                <p>Alejandra Ospina<br>
+                    Tel: 3206532512<br>
+                    Clientes:<br>
+                    <br>
+                    <br>
+                    </p>
 
-                    <form id="myForm">
-
-                        <div class="formulario-login-cabecera">
-
-                        
-
-                        </div>
-
-                        <div class="login-elements">
-
-                            <input type="text" name="user" placeholder="Usuario" required/>
-
-                        </div>
-
-                        <div class="login-elements">
-
-                            <input type="password" name="pass" placeholder="Contraseña" required/>
-
-                        </div>
-
-                        <div class="login-elements">
-
-                            <input type="submit" name="entrar" class="btn btn-sucess" style= "background-color: #FFD700;" "color: white;">
-
-                        </div>
-
-                    </form>
-
-                  </div>  
-                </div>
             </div>
-        
-
-          
         </div>
     </div>
 
@@ -113,32 +84,5 @@
 
     </div>
     </footer>
-
-    <script>
-        var form = document.getElementById('myForm');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var usuario = form.user.value;
-            var contrasena = form.pass.value;
-
-            if (usuario === 'i1006492085' && contrasena === '1234') {
-                window.location.href = 'loginJV.html';
-                
-            } else if(usuario === 'i1006472085' && contrasena === '1234'){
-                window.location.href = 'loginSG.html';
-
-            } else if(usuario === 'i1006592185' && contrasena === '1234'){
-                window.location.href = 'loginAO.html';
-            } else{
-                alert('Usuario o Contraseña Incorrectos.');
-                return;
-            }
-
-            // Realizar el procesamiento o envío de datos aquí
-            
-        });
-    </script>
 </body>
 </html>

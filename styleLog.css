@@ -236,7 +236,15 @@
     width: 100%;
   }
 
-
+  .container{
+    background-color: #000000;;
+    color:#FFD700;;
+    border-radius: 2rem;
+    padding-top: .5rem;
+    max-width: 300px; /* Ajusta el valor según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    height: 250px;
+  }
   
   /* Estilos del footer */
   
