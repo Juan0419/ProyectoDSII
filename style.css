@@ -299,6 +299,11 @@ body{
     margin-bottom: 10px;
     text-align: center;
   }
+
+  .imagen-pequena {
+    width: 120px; /* Ancho deseado */
+    height: 100px; /* Alto deseado */
+}
   
   /* Estilos del footer */
   

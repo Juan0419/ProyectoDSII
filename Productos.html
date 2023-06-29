@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRON FIT</title>
@@ -46,67 +49,45 @@
 
     <main class="contenido">
     <div class="contenido--principal contenedor shadow">
-        <div class="borde">
-            <h2 class="subtitulo">Nuestros Planes</h2>
-        </div>
-
-        <div class="contenidos__plan grid">
-            <div class="plan">
-                <div class="tarjeta">
-                <h3 class="subtitulo-planes">Plan Iron Mensual</h3>
-                <p>Con el plan Iron podras contar con:<br>
-                El derecho al entrenamiento los dias que consideres.<br>
-                Acceso a las clases grupales que sean asignadas por el gimnasio.<br>
-                Seguro medico dentro de las instalaciones.</p>
-                <h4 class="subtitulo-precios">60.000 Pesos</h4>
+        
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="ProdSuplementos.html">
+                        <img src="Images/Prod1.jpg" class="d-block w-100" alt="Imagen 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Suplementos Vitaminicos.</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="ProdRopa.html">
+                        <img src="Images/Prod2.jpg" class="d-block w-100" alt="Imagen 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vestimenta Deportiva.</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="ProdAccesorios.html">
+                        <img src="Images/Prod3.jpg" class="d-block w-100" alt="Imagen 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Accesorios Deportivos.</h5>
+                        </div>
+                    </a>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <div class="plan">
-            <div class="tarjeta">
-                <h3 class="subtitulo-planes">Plan Golden Mensual</h3>
-                <p>Con el plan golden podras contar con:<br>
-                Derecho a instructor que asesore tu rutina.<br>
-                El derecho al entrenamiento los dias que usted considere.<br>
-                Acceso a las clases grupales que sean asignadas por el gimnasio.<br>
-                Seguro medico dentro de las instalaciones.</p>
-                <h4 class="subtitulo-precios">90.000 Pesos</h4>
-            </div>
-        </div>
-
-        <div class="plan">
-            <div class="tarjeta">
-                <h3 class="subtitulo-planes">Plan Diamond</h3>
-                <p>Con el plan diamond podras contar con:<br>
-                El derecho al entrenamiento los dias que consideres, con entrenador personalizado.<br>
-                Acceso 2x1 dos veces por semana.<br>
-                Acceso a las clases grupales que sean asignadas por el gimnasio.<br>
-                Seguro medico dentro de las instalaciones.</p>
-                <h4 class="subtitulo-precios">60.000 Pesos</h4>
-
-            </div>
-        </div>
-
-        <div class="plan">
-            <div class="tarjeta">
-                <h3 class="subtitulo-planes">Plan Quincenal</h3>
-                <p>Con el plan quincenal podras contar con:<br>
-                El derecho al entrenamiento los dias que consideres.<br>
-                Seguro medico dentro de las instalaciones.</p>
-                <h4 class="subtitulo-precios">35.000 Pesos</h4>
-            </div>
-        </div>
-
-        <div class="plan">
-            <div class="tarjeta">
-                <h3 class="subtitulo-planes">Pasadia</h3>
-                <p>Con la pasadia podras contar con:<br>
-                El derecho al entrenamiento.<br>
-                Seguro medico dentro de las instalaciones.</p>
-                <h4 class="subtitulo-precios">10.000 Pesos</h4>
-            </div>
-        </div>
-        </div>
+        
+          
     </div>
 
 
