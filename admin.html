@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRON FIT</title>
-    <link rel="stylesheet" href="styleIng.css">
+    <link rel="stylesheet" href="admin.css">
     <link rel="icon" type="image/png" href="Images/IP.jpg">
 </head>
 <body>
@@ -48,54 +48,64 @@
 
 
     <main class="contenido">
-    <div class="contenido--principal contenedor shadow">
-        <div class="borde text-center">
-            <h2 class="subtitulo">Ingreso de Usuario</h2>
-        </div>
+        <div class="contenido--principal contenedor shadow">
+            <div class="borde text-center">
+                <h2 class="subtitulo">Ingreso de Usuario</h2>
+            </div>
             <div class="container">
-                <div class="text-center caja-login" style="background-color: black;">
-                
-                  <div class="formulario-login">
-
-                    <form id="myForm">
-
-                        <div class="formulario-login-cabecera">
-
-                        
-
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-center caja-login" style="background-color: black;">
+                            <div class="formulario-login">
+                                <form id="myForm">
+                                    <!-- Primer formulario -->
+                                    <div class="login-elements">
+                                        <input type="text" name="user" placeholder="No. Cliente" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="password" name="pass" placeholder="Nombre" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="text" name="user" placeholder="Horario" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="password" name="pass" placeholder="Suscripcion" required/>
+                                    </div>
+                                    <!-- Más campos del primer formulario -->
+                                </form>
+                            </div>
                         </div>
-
-                        <div class="login-elements">
-
-                            <input type="text" name="user" placeholder="Usuario" required/>
-
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center caja-login" style="background-color: black;">
+                            <div class="formulario-login">
+                                <form id="myForm">
+                                    <!-- Segundo formulario -->
+                                    <div class="login-elements">
+                                        <input type="text" name="user" placeholder="Telefono" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="password" name="pass" placeholder="Eps" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="text" name="user" placeholder="Contraseña" required/>
+                                    </div>
+                                    <div class="login-elements">
+                                        <input type="password" name="pass" placeholder="Instructor" required/>
+                                    </div>
+                                    <!-- Más campos del segundo formulario -->
+                                </form>
+                            </div>
                         </div>
-
-                        <div class="login-elements">
-
-                            <input type="password" name="pass" placeholder="Contraseña" required/>
-
-                        </div>
-
-                        <div class="login-elements">
-
-                            <input type="submit" name="entrar" class="btn btn-sucess" style= "background-color: #FFD700;" "color: white;">
-
-                        </div>
-
-                    </form>
-
-                  </div>  
+                        <div class="row mt-2">
+                            <div class="col text-center">
+                                <input type="submit" name="Enviar" class="btn btn-success" style="background-color: #FFD700; color: white;">
+                    </div>
                 </div>
             </div>
-        
-
-          
         </div>
-    </div>
-
-
     </main>
+    
   
 
 <!--Pie pag-->>
